@@ -1,0 +1,255 @@
+
+.touch-form{
+    position: relative;
+    &__form-container{
+        @include width();
+      
+        min-height: 1216px;
+        padding-top: 219px;
+        position: relative;
+
+        @include respond( tab-port){
+            padding-top: 70px;
+            width: 100%;
+            max-width: 100%;
+        }
+        @include respond( phone-2){
+            width: 100%;
+            max-width: 100%;
+        }
+      
+    }
+    &__form-flex{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__form-col-6{
+        max-width: 50%;
+        flex: 0 0 50%;
+        padding-left: 28px;
+        padding-right: 28px;
+        
+        @include respond( tab-port){
+            flex:0 0  90%;
+            max-width: 90%;
+            padding-left: 0.4rem;
+            padding-right: 0.4rem;
+            @include margin();
+            &:not(:first-child){
+                margin-top: 2rem;
+                padding-bottom: 2rem;
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            }
+        }
+   
+    }
+    &__form-h1{
+        font-size: 60px;
+        color: #323232;
+    }
+    &__form-p{
+        font-size: 22px;
+        line-height: 38px;
+        color: #9f9f9f;
+        font-weight: 300;
+        margin-top: 46px;
+        margin-bottom: 7px;
+    }
+    &__form-icon-flex{
+        display: inline-flex;
+        width: 100%;
+        margin-top: 44px;
+        @include respond(tab-port){
+            margin-top: 18px;
+        }
+    }
+    &__form-icon{
+        display: block;
+        padding-top: 5px;
+        color: #e80f70;
+        font-size: 24px;
+        margin-right: 1.5rem;
+        margin-left: 1.5rem;
+       
+    }
+   
+   
+    &__form-text{
+        font-size: 20px;
+        line-height: 36px;
+        color: #9f9f9f;
+        font-weight: 300;
+    }
+    &__form-group-flex{
+        display: flex;
+    }
+    &__input-box{
+        margin-top: 2rem;
+        margin-bottom: 32px;
+        width: 50%;
+        flex: 0 0 50%;
+        height: 51px;
+    }
+    
+    &__form-input{
+        width: 100%;
+        line-height: 51px;
+        height: 100%;
+        outline: none;
+        border: 1px solid transparent;
+        padding-left: 1.25rem;
+        border-radius: 25.5px;
+        background-color: #f0f0f0;
+        font-size: 17px;
+        color: #464646;
+    }
+    &__form-mm2{
+        padding-left: 15.5px;
+    }
+    &__form-mm1{
+        padding-right: 15.5px;
+    }
+    &__form-group{
+        width: 100%;
+       
+        textarea{
+            width: 100%;
+            outline: none;
+            padding-top: 0.5rem;
+            padding-left: 0.5rem;
+            border: 1px solid  transparent;
+            border-radius: 6.5px;
+            background-color: #f0f0f0;
+            font-size: 17px;
+            color: #464646;
+            min-height: 500px;
+            @include respond(tab-port){
+                min-height: 250px;
+            }
+        }
+    }
+    &__message-btn{
+        max-width: 195px;
+        width: 100%;
+        height: 52px;
+        text-align: center;
+        line-height: 52px;
+        border-radius: 25.5px;
+        background-color: #e80f70;
+        color: white;
+        display: inline-block;
+        text-decoration: none;
+        font-size: 17px;
+        margin-top: 37px;
+        transition: all 0.3s ease;
+        &:hover{
+            color: white;
+            background-color: #fc2385;
+        }
+    }
+    &__message-span{
+        padding-right: 0.5rem;
+        font-size: 17px;
+    }
+
+
+
+
+
+
+
+
+    
+    &__form-second-container{
+        max-width: 1668px;
+        width: 100%;
+        height: 500px;
+        transform: translate(-50%, 0%);
+        position: absolute;
+        left: 50%;
+        bottom: -320px;
+        z-index: 2;
+         @include respond( tab-port){
+             margin-bottom: 20px;
+             height: 400px;
+         }
+         @include respond(phone-2){
+             height: 400px;
+         }
+         @include respond(phone-4){
+            margin-bottom: -121px;
+             height: 400px;
+         }
+         
+    }
+    &__form-second-home{
+        background-image: url(../../img/watch.jpg);
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 3;
+    }
+    &__form-second-inner{
+        position: relative;
+        z-index: 3;
+       text-align: center;
+       width: 64%;
+       @include margin();
+        @include respond( tab-port){
+            width: 90%;
+          
+        }
+        @include respond( phone-2){
+            width: 98%;
+        
+        }
+       
+    }
+    &__form-inner-h1{
+        font-size: 60px;
+        color: white;
+        padding-top: 150px;
+        @include respond( tab-port){
+            font-size: 45px;
+            padding-top: 100px;
+        }
+        @include respond(phone-2){
+            font-size: 40px;
+            padding-top: 100px;
+         
+        }
+        @include respond(phone){
+            padding-top: 132px;
+            
+        }
+        @include respond(zero-size){
+            font-size: 30px;
+        }
+        
+    }
+    &__form-inner-btn{
+        margin-top: 46px;
+    }
+    &__form-inner-btn-a{
+        display: inline-block;
+        width: 229px;
+        height: 51px;
+        line-height: 51px;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        font-size: 18.666px;
+        background-color: #e80f70;
+        border-radius: 25.5px;
+        transition: all 0.3s ease;
+        &:hover{
+            color: white;
+            background-color: #fc2385;
+        }
+    }
+}

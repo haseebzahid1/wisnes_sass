@@ -1,0 +1,203 @@
+
+
+.better{
+    width: 100%;
+    height: 468px;
+    position: relative;
+   
+    background-color: #dadada;
+    @include respond(tab-land-5){
+        height: 380px;
+    }
+    @include respond(tab-land-5){
+        margin-top: 6rem;
+    }
+    &__better-flex{
+        display: flex;
+        flex-wrap: wrap;
+        
+        background-color: #2a2a2a;
+        @include abc();
+        box-shadow: rgba(0, 0, 0, 0.19) 20px 20px 49px;
+        
+    }
+    &__better-postion{
+       width: 100%;
+       position: absolute;       
+       top: -218px;
+       left: 0;
+      
+       
+    }
+//    /////////////////////////////////
+    &__better-right{
+        max-width: 45%;
+        flex: 0 0 45%;
+     
+        
+        @include respond(tab-land-5){
+            max-width: 100%;
+            flex: 0 0 100%;
+        }
+    }
+    // /////////////////////////////
+    &__better-left{
+        max-width: 55%;
+        flex: 0 0 55%;
+        padding-left: 34px;
+        @include respond(tab-land-5){
+            max-width: 100%;
+            flex: 0 0 100%;
+            display: none;
+        }
+    }
+
+    @include respond(tab-land-5){
+        &__better-left-z-index{
+           
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            padding-left: 4rem;
+          
+            @include respond(phone){
+                padding-left: 2rem;
+            }
+            @include respond(zero-size){
+                padding-left: 0.8rem;
+            }
+        }
+    }
+
+    // ///////////////////////////
+    &__better-h1{
+        text-transform: uppercase;
+        font-size: 45px;
+        padding-right: 17px;
+        font-weight: bold;
+        margin-top: 84px;
+        transition: all 0.3s ease;
+        color: #fff;
+        line-height: 60px;
+
+        @include respond(tab-land-5){
+            margin-top: 54px;
+            text-align: center;
+            @include margin();
+        }
+        @include respond(phone-1){
+            margin-top: 54px;
+            font-size: 44px;
+        }
+        @include respond(zero-size){
+            line-height:45px ;
+            font-size: 28px;
+            margin-top: 40px;
+        }
+        
+    }
+    &__better-p{
+        margin-top: 40px;
+        color: #9f9f9f;
+        padding-right: 3.2rem;
+        font-size: 20px;
+        line-height: 27px;
+        color: white;
+        @include respond(zero-size){
+            margin-top: 22px;
+            padding-right: 0.8rem;
+            font-size: 18px;
+            text-align: center;
+        }
+    
+    
+        
+       
+    }
+    &__better-btn{
+        margin-top: 43px;
+        display: inline-flex;
+        text-align: center;
+        font-size: 17.333333px;
+        text-decoration: none;
+        margin-bottom: 64px;
+        color: #fff;
+        transition: all 0.3s ease;
+        &:hover{
+            color: #e80f70;
+        }
+        @include respond(zero-size){
+            margin-top: 33px;
+        }
+    }
+    &__better-span{
+        
+        margin-left: 8px;
+        padding-top: 1.5px;
+        display: inline-block;
+    }
+
+    &__slick-inner{
+        width: 100%;
+        position: relative;
+    }
+    &__better-img{
+        height: 512px;
+        width: 100%;
+        position: relative;
+       
+        @include respond(tab-land){
+            height: 535px;
+          
+        }
+        @include respond(tab-land-5){
+            height: 450px;
+           
+        }
+        img{
+            height: 100%;
+            width: 100%;
+            background-repeat: no-repeat;
+            object-fit: cover;
+        }
+    }
+    @include respond(tab-land-5){
+        &__better-img:before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            opacity: 0.7;
+        }
+    }
+   
+   
+ 
+    &__slick-inner .owl-theme .owl-nav{
+        display: none;
+    }
+    &__slick-inner .owl-theme .owl-dots{
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+    }
+    &__slick-inner button{
+        outline: none;
+    }
+    &__slick-inner .owl-theme .owl-dots .owl-dot.active span{
+        width: 12px;
+        height: 12px;
+    }
+    &__slick-inner .owl-theme .owl-dots .owl-dot span{
+        background-color: #fff;
+        opacity: 50%;
+    }
+    &__slick-inner .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+        background: #fff;
+        opacity: 1;
+    }
+}

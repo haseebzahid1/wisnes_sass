@@ -1,0 +1,134 @@
+
+
+.vedio-container{
+    width: 100%;
+    height: 571px;
+    
+    position: relative;
+   .vedio-img{
+       background-size: cover;
+       background-repeat: no-repeat;
+       width: 100%;
+       height: 100%;
+       object-fit: cover;
+   }
+
+    &__vedio-btn{
+        
+        width: 60px;
+        height: 60px;
+        border-radius: 50px;
+        background: black;
+        opacity: 0.6;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        line-height: 60px;
+        z-index: 32;
+    }
+
+    &__bg-vedio{
+       
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% , -50%);
+        height: 541px;
+        overflow: hidden;
+        object-fit: cover;
+    }
+
+    &__content{
+        width: 100%; 
+        height: 100%;
+        object-fit: cover;
+    }
+   
+    &__vedio-span{
+      display: inline-block;
+      padding-left: 5px;
+      font-size: 40px;
+      color: #fff;
+    }
+
+    &__close-btn{
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        font-size: 35px;
+        border-radius: 50px;
+        line-height: 45px;
+        height: 45px;
+        text-align: center;
+        color: white;
+        width: 45px;
+        display: inline-block;
+        background-color: #283cd1d2;
+    }
+
+    &__vedio-bottom{
+        max-width: 1168px;
+        width: 100%;
+        min-height: 238px;
+        left: 50%;
+        bottom: -133px;
+        position: absolute;
+        transform: translate(-50% , 0%);
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        @include respond( zero-size){
+            bottom: -268px;
+        }
+    }
+    
+    &__vedio-bottom2{
+        @include margin();
+        max-width:954px ;
+        text-align: center;
+        @include respond( tab-port){
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        
+        @include respond( phone-1){
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            // background-color: red;
+        }
+        
+    }
+ 
+    &__vedio-h2{
+        font-size: 40px;
+        color: #323232;
+        @include respond( zero-size){
+            font-size: 35px;
+            line-height: 50px;
+            margin-top: 26px;
+        }
+        @include respond( phone-1){
+            margin-top: 1rem;
+        }
+    }
+    &__vedio-span2{
+        font-weight: 300;
+    }
+    &__vedio-p{
+        margin-top: 26px;
+        font-size: 22.333333px;
+        line-height: 41px;
+        @include respond( zero-size){
+            font-size: 19px;
+            line-height: 35px;
+           
+        }
+        @include respond( phone-1){
+            margin-top: 20px;
+        }
+    }
+    }

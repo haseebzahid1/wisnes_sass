@@ -1,0 +1,145 @@
+.purple-slide{
+    height: 477px;
+
+    background-color: #4d25bf;
+    @include respond(tab-port){
+        height: 530px;
+    }
+    @include respond(phone-2){
+        // height: 530px;
+    }
+    &__content{
+        @include width();
+        max-width: 1200px;
+        height: 100%;
+        color: white;
+       
+    }
+  
+    &__main-flex{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        padding-top: 5.5rem;
+        width: 100%;
+        @include margin();
+        min-height: 400px;
+
+        @include respond(tab-port-1){
+            padding-top: 3rem;
+            flex-direction: column;
+          
+        }
+        @include respond(zero-size){
+            padding-top: 1.5rem;
+        }
+    }
+    &__slide-left{
+        flex: 0 0 28%;
+        max-width: 28%;
+        @include margin();
+        @include respond(tab-port-1){
+            max-width: 100%
+        }
+    }
+    &__slide-right{
+        @include margin();
+        flex: 0 0 72%;
+        max-width: 72%;
+        position: relative;
+        padding-left: 2rem;
+        @include respond(tab-port-1){
+            max-width: 90%;
+            padding-left: 1rem;
+        }
+       
+    }
+    &__slide-img{
+        
+        width: 264px;
+        height: 264px;
+        @include respond(tab-port-1){
+            width: 204px;
+            height: 204px;
+        }
+       
+        img{
+            width: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+    }
+ 
+    &__slide-right-h1{
+        font-size: 35.666px;
+        font-weight: lighter;
+        line-height: 61px;
+        text-align: left;
+        @include respond(tab-port-1){
+            font-size: 30px;
+            line-height: 50px;
+            margin-top: 2rem;
+            
+        }
+        @include respond(phone-2){
+            font-size: 25px;
+            line-height: 40px;
+        }
+        @include respond(zero-size){
+            line-height: 35px;
+            font-size: 20px;
+        }
+    }
+    &__slide-semi{
+        position: absolute;
+        top: -55px;
+        left: 33px;
+        z-index: 1;
+        @include respond(tab-port-1){
+            top: -8px;
+            left: -18px;
+        }
+        @include respond(phone-2){
+            left: -0px;
+        }
+    }
+    &__slide-semi-span{
+        font-size: 40px;
+        @include respond(tab-port-1){
+            font-size: 30px;
+        }
+    }
+    &__content .owl-theme .owl-nav{
+        display: none;
+    }
+    &__content .owl-theme .owl-dots{
+        position: absolute;
+        bottom: -50px;
+        left: 50%;
+        transform: translate(-50% , -50%);
+      
+        @include respond(tab-port){
+            bottom: -78px;
+        }
+        @include respond(phone){
+            bottom: -70px;
+        }
+    }
+    &__content .owl-theme .owl-dots .owl-dot.active span{
+         width: 12px;
+         height: 12px;
+    }
+    &__content .owl-theme .owl-dots .owl-dot span{
+         background-color: #fff;
+         opacity: 50%;
+    }
+    &__content .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+         background: #fff;
+         opacity: 1;
+    }
+}
+
+

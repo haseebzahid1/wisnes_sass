@@ -1,0 +1,225 @@
+.cameraflow{
+    width: 100%;
+    min-height: 1050px;
+    position: relative;
+    padding-top: 430px;
+    padding-bottom: 169px;
+    color: white;
+    @include respond( tab-port){
+        padding-top: 150px;
+        height: 1100px;
+    }
+    @include respond( phone-2){
+       text-align: center;
+    }
+    @include respond( zero-size-1){
+        padding-top: 100px;
+        height: 950px;
+    }
+    
+    &__camera-flow-img{
+       background-image: url(../../img/wisness.jpg);
+       background-repeat: no-repeat;
+       background-size: cover;
+       width: 100%;
+       height: 100%;
+       background-position: 80% 50%;
+       position: absolute;
+       top: 0;
+       left: 0;
+    }
+
+    &__camera-flow-img:before{
+        background: rgba(0, 0, 0, 0.7);
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+    }
+
+    &__camera-flex{
+        @include margin();
+        max-width: 1564px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        z-index: 2;
+    }
+
+    &__camera-left{
+        flex: 0 0 46%;
+        max-width: 46%;
+ 
+        padding-left:30px ;
+        padding-right: 10px;
+        @include respond( tab-port){
+            max-width: 90%;
+            flex: 0 0 90%;
+            padding-left: 0;
+            padding-right: 0;
+            @include margin();
+        }
+        @include respond( zero-size){
+            max-width: 100%;
+        }
+    }
+
+    &__camera-right{
+        max-width: 54%;
+        flex: 0 0 54%;
+        padding-left: 1rem;
+        @include respond( tab-port){
+            padding-top: 3rem;
+            @include margin();
+            max-width: 90%;
+            flex: 0 0 90%;
+        }
+
+        @include respond( zero-size){
+            max-width: 100%;
+            flex: 0 0 100%;
+           
+        }
+
+        @include respond( phone){
+            padding-left: 0.6rem;
+        }
+    }
+
+    &__camera-small-flex{
+        display: flex;  
+      
+    }
+
+    &__camera-right-div,
+    &__camera-left-div{
+        max-width: 50%;
+        flex: 0 0 50%;
+        
+       
+    }
+    &__camera-right-div{
+        position: relative;
+    }
+    &__camera-left-p{
+        font-size: 101.186px;
+      
+        @include respond( tab-port){
+            text-align: center;
+        }
+        @include respond( zero-size){
+            font-size: 70px;
+        }
+    }
+
+    &__camera-left-sup{
+        font-size: 30px;
+        position: absolute;
+        top: 17px;
+        left: 130px;
+        
+        @include respond( tab-port){
+            top: 12px;
+            right: -20px;
+        }
+        @include respond( zero-size){
+            top: 2px;
+            right: 0px;
+            margin-left: -7px;
+        }
+    }
+
+    &__camera-left-span{
+        display: block;
+        font-size: 21.333px;
+        font-weight: 400;
+        @include respond( tab-port){
+            text-align: center;
+        }
+        
+    }
+    
+    &__camera-p{
+        margin-top: 80px;
+        font-size: 22.66666px;
+        line-height: 46px;
+        @include respond( zero-size){
+            margin-top: 60px;
+        }
+    }
+    
+    &__camera-right-h1{
+        font-size: 70.05333px;
+        line-height: 82px;
+        margin-top: 52px;
+        @include respond( tab-land-7){
+            font-size: 63px;
+           
+     
+        }
+        @include respond( zero-size-1){
+            font-size: 53px;
+            line-height: 62px;
+          
+        }
+        @include respond( zero-size){
+            font-size: 35px;
+            line-height: 52px;
+            margin-top: 32px;
+        }
+    }
+    &__camera-right-h3{
+        font-size: 18.666666px;
+        text-transform: uppercase;
+        @include respond( zero-size){
+            margin-top: 2rem;
+        }
+    }
+    
+    &__camera-btn-box{
+        margin-top: 64px;
+        @include respond( zero-size){
+            margin-top: 40px;
+        }
+        
+    }
+    &__camera-btn-a{
+        height: 54px;
+        line-height: 54px;
+        line-height: 54px;
+        background-color: #e70f70;
+        display: inline-block;
+        width: 210px;
+        text-align: center;
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        border-radius: 50px;
+        padding-right: 8px;
+        transition: all 0.3s ease;
+        &:hover{
+            color: white;
+            background-color: #fc2385;
+        }
+       
+    }
+    &__camera-btn-a:hover  &__camera-btn-a-span{
+        color: white;
+        background-color: #f74b98;
+    }
+    &__camera-btn-a-span{
+        width: 28px;
+        height: 28px;
+        text-align: center;
+        margin-right: 8px;
+        line-height: 28px;
+        display: inline-block;
+        background-color: #f55da1;
+        border-radius: 50px;
+        transition: all 0.3s ease;
+       
+    }
+}

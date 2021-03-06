@@ -1,0 +1,209 @@
+.footer{
+    padding-top: 370px;
+    background-color: #1c1c1c;
+    position: relative;
+    @include respond(phone-3){
+     margin-top: 8rem;
+       border: 1px solid blue;
+    }
+    
+    // @include respond( tab-port){
+    //     padding-top: 600px;
+    //     border: 1px solid red
+    // }
+
+    &__footer-container{
+        @include width();
+        min-height: 400px;
+        // border: 1px solid blue;
+    }
+    &__footer-flex{
+        padding-top: 32px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__footer-col-me-3{
+        max-width: 25%;
+        flex: 0 0 25%;
+        padding-left: 1rem;
+        @include respond( tab-port){
+            max-width: 50%;
+            flex: 0 0 50%;
+            padding-left: 4rem;
+            &:not(:first-child){
+                padding-top: 1rem;
+            }
+        }
+        @include respond( phone){
+          max-width: 100%;
+          flex: 0 0 100%;
+          padding-left: 0;
+          text-align: center;
+        }
+    }
+    &__footer-h1{
+        font-size: 21.3333px;
+        color: #fff;
+        line-height: 33px;
+        margin-bottom: 52px;
+        @include respond( phone){
+            margin-bottom: 32px;
+            font-size: 25px;
+          }
+    }
+    &__footer-item{
+        list-style: none;
+        &:not(:first-child){
+            padding-top:0.6rem ;
+        }
+    }
+    &__footer-link{
+        font-size: 20px;
+        font-weight: 300;
+        color: #9f9f9f;
+        text-decoration: none;
+        display: inline-block;
+        line-height:32px ;
+        transition: all 0.2s ease;
+        &:hover{
+            color: whitesmoke;
+        }
+    }
+    &__footer-hr{
+        width: 100%;
+        height: 1px;
+        background-color: #494949;
+        @include respond( tab-port){
+            margin-top: 3rem;
+        }
+    }
+    &__small-ul-flex{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 75%;
+        @include respond(tab-land-5){
+            padding-right: 3rem;
+            max-width: 80%;
+        }
+        @include respond(phone-2){
+            padding-right: 0;
+            max-width: 40%;
+            @include margin ();
+        }
+    }
+    &__small-item{
+        list-style: none;
+       
+    }
+    &__small-link{
+        display: inline-block;
+        color: #fff;
+        font-weight: 300;
+        font-size: 18px;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 40px;
+        transition: all 0.3s ease;
+        
+      
+        &:hover{
+            background-color: rgb(87, 86, 86);
+        }
+    }
+    &__small-copy{
+        font-size: 13px;
+        margin-top: 31px;
+        color: #9f9f9f;
+        line-height: 22px;
+        @include respond( phone){
+            margin-top: 21px;
+        }
+    }
+    //bottom-footer-flex
+    &__bottom-footer-flex{
+        @include width();
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        @include respond( tab-port){
+            flex-direction: column;
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
+            text-align: center;
+        }
+    }
+  
+    &__bottom-h1{
+        @include respond( tab-port){
+            margin-bottom: 1rem;
+          
+          
+        }
+    }
+    &__bottom-h1-child{
+        transition: all 0.3s ease;
+        &:hover{
+            color: whitesmoke;
+        }
+    }
+    &__bottom-link{
+        text-decoration: none;
+        color: #fff;
+        font-size: 17px;
+        text-transform: uppercase;
+        transition: all 0.3s ease;
+       &:hover{
+        color: rgb(209, 209, 209);
+       }
+    }
+    &__footer-bottom-span{
+        display: inline-block;
+        line-height: 35px;
+        &:not(:first-child){
+            padding-left: 37px;
+        }
+        @include respond(tab-port){
+           
+            &:not(:first-child){
+                padding-left: 1rem;
+            }
+        }
+    }
+   
+}
+
+
+.btn-over{
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    font-size: 44px;
+    position: absolute;
+    right: 50px;
+    bottom: 10rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.btn-over a{
+    display: block;
+    background-color: #747474;
+    color: white;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+.btn-over a:hover{
+    color: rgb(17, 132, 185);
+    background-color: #d8d7d7;
+}

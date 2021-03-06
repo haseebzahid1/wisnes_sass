@@ -1,0 +1,52 @@
+.wisness{
+    position: relative;
+    
+    width: 100%;
+    height: 791px;
+
+    &__wisness-home{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background-image: url(../../img/jeremy.jpg);
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-size: cover;
+       
+    }
+  
+    &__wisness-color {
+        padding-top: 85px;
+        position: absolute;
+       
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        // background:#4d25bf ;
+        background: rgba(78, 27, 160, 0.782);
+        
+        text-align: center;
+    }
+    &__wisness-h3{
+        margin-top: 182px;
+        color: #d6d1d1;
+        font-weight: 400;
+        font-size: 26.666666px;
+    }
+    &__wisness-h2{
+        margin-top: 35px;
+        color: #fff;
+        font-weight: 400;
+        font-size: 102.666666px;
+        @include respond(phone-2){
+            font-size: 80px;
+        }
+        @include respond(zero-size){
+            font-size: 50px;
+        }
+    }
+}
+
+
+

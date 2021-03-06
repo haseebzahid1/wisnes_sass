@@ -1,0 +1,14 @@
+{
+  "name": "button-animatin-check",
+  "version": "1.0.0",
+  "description": "Hellow are how are you.)",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/style.scss css/style.css -w"
+  },
+  "author": "Haseeb zahid",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
