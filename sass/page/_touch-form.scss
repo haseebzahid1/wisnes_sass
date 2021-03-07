@@ -197,8 +197,8 @@
     &__form-second-inner{
         position: relative;
         z-index: 3;
-       text-align: center;
-       width: 64%;
+        text-align: center;
+        width: 64%;
        @include margin();
         @include respond( tab-port){
             width: 90%;
